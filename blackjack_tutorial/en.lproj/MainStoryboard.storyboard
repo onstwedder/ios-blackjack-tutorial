@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xn-JA-qxg">
+                                <items>
+                                    <barButtonItem title="Hit" id="ZSY-q6-8qI">
+                                        <connections>
+                                            <action selector="HitCard:" destination="2" id="kMn-QG-rBb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Stand" id="dOB-Bj-L2U">
+                                        <connections>
+                                            <action selector="Stand:" destination="2" id="KhX-pM-rfC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8GX-MX-myn"/>
+                                    <barButtonItem enabled="NO" title=" New Game" id="v4J-Yl-Eem">
+                                        <connections>
+                                            <action selector="ResetGame:" destination="2" id="b3y-7b-Tm9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Dealer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyF-WB-DTU">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Player" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8r-7w-QcI">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdL-Rr-GVv">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="jrL-XW-V0w"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Blackjack">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="26" name="Futura-Medium"/>
+                                            <font key="NSOriginalFont" size="36" name="ComicSansMS"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0xn-JA-qxg" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="2Xy-wS-iQ8"/>
+                            <constraint firstItem="0xn-JA-qxg" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="5k5-dP-JP9"/>
+                            <constraint firstItem="AyF-WB-DTU" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7EP-dn-UAG"/>
+                            <constraint firstAttribute="trailing" secondItem="AyF-WB-DTU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="99S-5o-TUT"/>
+                            <constraint firstItem="ZdL-Rr-GVv" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Eta-HX-CeH"/>
+                            <constraint firstItem="ZdL-Rr-GVv" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="PDn-Nh-sb4"/>
+                            <constraint firstAttribute="trailing" secondItem="s8r-7w-QcI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Rky-xM-Rfi"/>
+                            <constraint firstItem="s8r-7w-QcI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="263" id="WHa-wF-46f"/>
+                            <constraint firstItem="s8r-7w-QcI" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Y50-Lv-r9a"/>
+                            <constraint firstItem="ZdL-Rr-GVv" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="lGh-Gd-cMk"/>
+                            <constraint firstItem="AyF-WB-DTU" firstAttribute="top" secondItem="ZdL-Rr-GVv" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="tVf-9X-mxD"/>
+                            <constraint firstItem="0xn-JA-qxg" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="y8g-jF-UV6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YyU-6x-4iB"/>
+                    <connections>
+                        <outlet property="HitButton" destination="ZSY-q6-8qI" id="kgt-5E-rkn"/>
+                        <outlet property="PlayerLabel" destination="s8r-7w-QcI" id="FMt-QU-cMy"/>
+                        <outlet property="dealerLabel" destination="AyF-WB-DTU" id="I2m-tV-art"/>
+                        <outlet property="playerLabel" destination="s8r-7w-QcI" id="l6m-hl-bNo"/>
+                        <outlet property="resetButton" destination="v4J-Yl-Eem" id="ld8-8B-IKt"/>
+                        <outlet property="standButton" destination="dOB-Bj-L2U" id="yK5-If-yGg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37" y="-289"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="HitCard:"/>
+                <relationship kind="action" name="ResetGame:"/>
+                <relationship kind="action" name="Stand:"/>
+                <relationship kind="outlet" name="HitButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="dealerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="playerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="resetButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="standButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
